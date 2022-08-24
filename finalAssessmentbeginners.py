@@ -17,7 +17,7 @@ if result:
     st.write("Welcome! :smile:")
 
 from PIL import Image
-image = Image.open('iris.jpg')
+image = Image.open('iris.png')
 
 st.image(image, caption='Iris species')
 
