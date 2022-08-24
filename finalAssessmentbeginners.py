@@ -16,6 +16,11 @@ st.write(result)
 if result:
     st.write("Welcome! :smile:")
 
+from PIL import Image
+image = Image.open('iris.jpg')
+
+st.image(image, caption='Iris species')
+
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
@@ -55,7 +60,4 @@ st.write(iris.target_names[prediction])
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
-from PIL import Image
-image = Image.open('sunrise.jpg')
 
-st.image(image, caption='Iris')
