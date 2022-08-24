@@ -10,6 +10,12 @@ st.write("""
 This app predicts the **Iris flower** type!
 """)
 
+st.title("Greetings")
+result=st.button("Click Here")
+st.write(result)
+if result:
+    st.write("Welcome! :smile:")
+
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
