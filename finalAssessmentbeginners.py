@@ -49,7 +49,4 @@ st.write(iris.target_names[prediction])
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
-if st.button('Say hello'):
-     st.write('Why hello there')
- else:
-     st.write('Goodbye')
+
