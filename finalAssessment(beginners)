@@ -49,9 +49,9 @@ st.write(iris.target_names[prediction])
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
-st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+st.button(label, key=None, help=None, on_click=None, args=None, kwargs=None, *, disabled=False)
 
-from streamlit-example import Image
-image = Image.open('sunrise.jpg')
-
-st.image(image, caption='Sunrise by the mountains')
+if st.button('Say hello'):
+     st.write('Why hello there')
+ else:
+     st.write('Goodbye')
