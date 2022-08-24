@@ -19,7 +19,7 @@ if result:
 from PIL import Image
 image = Image.open('iris.png')
 
-st.image(image, caption='Iris species')
+st.image(image, caption='Iris species <source: http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html>')
 
 st.sidebar.header('User Input Parameters')
 
